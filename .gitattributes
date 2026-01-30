@@ -1,0 +1,8 @@
+env/Lib/site-packages/llvmlite/binding/llvmlite.dll filter=lfs diff=lfs merge=lfs -text
+env/Lib/site-packages/torch/lib/dnnl.lib filter=lfs diff=lfs merge=lfs -text
+env/Lib/site-packages/torch/lib/kineto.lib filter=lfs diff=lfs merge=lfs -text
+env/Lib/site-packages/torch/lib/torch_cpu.dll filter=lfs diff=lfs merge=lfs -text
+pipeline/data/reference/taxdb.btd filter=lfs diff=lfs merge=lfs -text
+pipeline/data/reference/taxonomy4blast.sqlite3 filter=lfs diff=lfs merge=lfs -text
+pipeline/models/DNA_bert_6/pytorch_model.bin filter=lfs diff=lfs merge=lfs -text
+*.fasta filter=lfs diff=lfs merge=lfs -text

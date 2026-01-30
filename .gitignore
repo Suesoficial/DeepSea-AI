@@ -1,0 +1,10 @@
+node_modules/
+env/
+.env
+*.pem
+dist/
+data/processed/
+data/reference/
+models/DNA_bert_6/pytorch_model.bin
+.local/
+*.log

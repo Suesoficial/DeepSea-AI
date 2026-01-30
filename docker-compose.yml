@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  deepsea-ai:
+    build: .
+    ports:
+      - "80:5000"
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+    volumes:
+      - ./pipeline/data:/app/pipeline/data
+      - ./pipeline/models:/app/pipeline/models
+    restart: unless-stopped

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "job_1",
+    "name": "Deep Sea Hydrothermal Vent Analysis",
+    "status": "completed",
+    "progress": 100,
+    "createdAt": "2026-01-30T15:43:20.068Z",
+    "startedAt": "2026-01-30T15:43:20.069Z",
+    "completedAt": "2026-01-30T15:43:20.069Z",
+    "uploadedFiles": [
+      "deep-sea-hydrothermal-vent-analysis.fasta"
+    ],
+    "parameters": {
+      "minSequenceLength": 120,
+      "maxSequenceLength": 250,
+      "clusteringMethod": "HDBSCAN",
+      "qualityFiltering": true
+    },
+    "results": {
+      "abundanceCsvPath": "data/processed/dedup_counts.csv",
+      "taxonomyCsvPath": "data/processed/sequence_taxonomy.csv",
+      "diversityMetrics": {
+        "speciesRichness": 31,
+        "novelTaxa": 3,
+        "shannonIndex": 1.9959,
+        "simpsonIndex": 0.24
+      },
+      "taxonomicDistribution": [
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Sulfurimonadaceae",
+          "genus": "Sulfurimonas",
+          "species": "Sulfurimonas sp.",
+          "abundance": 173,
+          "confidence": 0.9888794859010961
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Campylobacteraceae",
+          "genus": "Sulfurovum",
+          "species": "Sulfurovum sp.",
+          "abundance": 99,
+          "confidence": 0.9216325920415058
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Psychromonadaceae",
+          "genus": "Psychrilyobacter",
+          "species": "Psychrilyobacter sp.",
+          "abundance": 10,
+          "confidence": 0.9336704672712592
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Arcobacteraceae",
+          "genus": "Arcobacter",
+          "species": "Arcobacter sp.",
+          "abundance": 5,
+          "confidence": 0.9204331795270746
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Puteibacteraceae",
+          "genus": "Puteibacter",
+          "species": "Puteibacter sp.",
+          "abundance": 3,
+          "confidence": 0.9495978726316188
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Sulfurimonadaceae",
+          "genus": "Chitinivibrio",
+          "species": "Chitinivibrio sp.",
+          "abundance": 2,
+          "confidence": 0.9517616010367861
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Campylobacteraceae",
+          "genus": "Desulfolithobacter",
+          "species": "Desulfolithobacter sp.",
+          "abundance": 2,
+          "confidence": 0.8402941300237855
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Psychromonadaceae",
+          "genus": "Malaciobacter",
+          "species": "Malaciobacter sp.",
+          "abundance": 2,
+          "confidence": 0.8608390506405795
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Arcobacteraceae",
+          "genus": "Desulfitispora",
+          "species": "Desulfitispora sp.",
+          "abundance": 1,
+          "confidence": 0.9634737655007535
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Puteibacteraceae",
+          "genus": "Others",
+          "species": "Others sp.",
+          "abundance": 14,
+          "confidence": 0.8003729250845331
+        }
+      ]
+    }
+  },
+  {
+    "id": "job_2",
+    "name": "Abyssal Plain Microbial Survey",
+    "status": "completed",
+    "progress": 100,
+    "createdAt": "2026-01-30T15:43:20.070Z",
+    "startedAt": "2026-01-30T15:43:20.070Z",
+    "completedAt": "2026-01-30T15:43:20.070Z",
+    "uploadedFiles": [
+      "abyssal-plain-microbial-survey.fasta"
+    ],
+    "parameters": {
+      "minSequenceLength": 120,
+      "maxSequenceLength": 250,
+      "clusteringMethod": "HDBSCAN",
+      "qualityFiltering": true
+    },
+    "results": {
+      "abundanceCsvPath": "data/processed/dedup_counts.csv",
+      "taxonomyCsvPath": "data/processed/sequence_taxonomy.csv",
+      "diversityMetrics": {
+        "speciesRichness": 24,
+        "novelTaxa": 22,
+        "shannonIndex": 2.0259,
+        "simpsonIndex": 0.2345
+      },
+      "taxonomicDistribution": [
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Sulfurimonadaceae",
+          "genus": "Sulfurimonas",
+          "species": "Sulfurimonas sp.",
+          "abundance": 86,
+          "confidence": 0.8560521981658467
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Campylobacteraceae",
+          "genus": "Sulfurovum",
+          "species": "Sulfurovum sp.",
+          "abundance": 46,
+          "confidence": 0.9823161049369116
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Psychromonadaceae",
+          "genus": "Psychrilyobacter",
+          "species": "Psychrilyobacter sp.",
+          "abundance": 6,
+          "confidence": 0.9245346353875638
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Arcobacteraceae",
+          "genus": "Puteibacter",
+          "species": "Puteibacter sp.",
+          "abundance": 3,
+          "confidence": 0.8389979667787721
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Puteibacteraceae",
+          "genus": "Arcobacter",
+          "species": "Arcobacter sp.",
+          "abundance": 2,
+          "confidence": 0.9924183451362
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Sulfurimonadaceae",
+          "genus": "Desulfolithobacter",
+          "species": "Desulfolithobacter sp.",
+          "abundance": 2,
+          "confidence": 0.9605026493607963
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Campylobacteraceae",
+          "genus": "Chitinivibrio",
+          "species": "Chitinivibrio sp.",
+          "abundance": 2,
+          "confidence": 0.9455169321477201
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Psychromonadaceae",
+          "genus": "Aquibacillus",
+          "species": "Aquibacillus sp.",
+          "abundance": 1,
+          "confidence": 0.8221707682429702
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Arcobacteraceae",
+          "genus": "Campylobacter",
+          "species": "Campylobacter sp.",
+          "abundance": 1,
+          "confidence": 0.8193466364296083
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Puteibacteraceae",
+          "genus": "Others",
+          "species": "Others sp.",
+          "abundance": 8,
+          "confidence": 0.9169038430789057
+        }
+      ]
+    }
+  },
+  {
+    "id": "job_3",
+    "name": "Antarctic Deep Water Sample",
+    "status": "completed",
+    "progress": 100,
+    "createdAt": "2026-01-30T15:43:20.070Z",
+    "startedAt": "2026-01-30T15:43:20.070Z",
+    "completedAt": "2026-01-30T15:43:20.070Z",
+    "uploadedFiles": [
+      "antarctic-deep-water-sample.fasta"
+    ],
+    "parameters": {
+      "minSequenceLength": 120,
+      "maxSequenceLength": 250,
+      "clusteringMethod": "HDBSCAN",
+      "qualityFiltering": true
+    },
+    "results": {
+      "abundanceCsvPath": "data/processed/dedup_counts.csv",
+      "taxonomyCsvPath": "data/processed/sequence_taxonomy.csv",
+      "diversityMetrics": {
+        "speciesRichness": 45,
+        "novelTaxa": 8,
+        "shannonIndex": 2.34,
+        "simpsonIndex": 0.18
+      },
+      "taxonomicDistribution": [
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Sulfurimonadaceae",
+          "genus": "Alteromonas",
+          "species": "Alteromonas sp.",
+          "abundance": 234,
+          "confidence": 0.9651267139461005
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Campylobacteraceae",
+          "genus": "Pseudoalteromonas",
+          "species": "Pseudoalteromonas sp.",
+          "abundance": 156,
+          "confidence": 0.8743534350606593
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Psychromonadaceae",
+          "genus": "Vibrio",
+          "species": "Vibrio sp.",
+          "abundance": 89,
+          "confidence": 0.9438231278586199
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Arcobacteraceae",
+          "genus": "Colwellia",
+          "species": "Colwellia sp.",
+          "abundance": 67,
+          "confidence": 0.8915702479011469
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Puteibacteraceae",
+          "genus": "Shewanella",
+          "species": "Shewanella sp.",
+          "abundance": 45,
+          "confidence": 0.9844271929189624
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Sulfurimonadaceae",
+          "genus": "Psychrobacter",
+          "species": "Psychrobacter sp.",
+          "abundance": 34,
+          "confidence": 0.9225535159911457
+        },
+        {
+          "kingdom": "Bacteria",
+          "phylum": "Proteobacteria",
+          "class": "Epsilonproteobacteria",
+          "family": "Campylobacteraceae",
+          "genus": "Others",
+          "species": "Others sp.",
+          "abundance": 78,
+          "confidence": 0.815745434621935
+        }
+      ]
+    }
+  }
+]
