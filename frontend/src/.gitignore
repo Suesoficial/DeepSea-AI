@@ -19,3 +19,8 @@ Thumbs.db
 
 # IDE
 .vscode/
+# Large reference databases (do not commit)
+pipeline/data/reference/
+pipeline/data/processed/
+backend/data/processed/
+pipeline/scripts/__pycache__/
